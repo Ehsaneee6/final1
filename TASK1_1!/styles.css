@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #1A3D63;
+}
+
+.banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding: 1px;
+    margin: 1px;
+    background-color: #B3CFE5;
+}
+
+.nav-item {
+    display: inline-block;
+    color: #0A1931;
+    font-size: 30px;
+    margin: 15px;        
+    padding: 10px;
+    text-align: center;
+    white-space: nowrap;
+    max-width: fit-content;
+}
+
+.p {
+    color: rgb(89, 93, 89);
+}
+
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    padding: 16px;
+    margin-top: 150px; 
+    box-sizing: border-box;
+}
+
+
+.content-item {
+    width: 100%;             
+    aspect-ratio: 1 / 1;       
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 50px;
+    background-color: #B3CFE5;
+}
+
+
+header .word1 {
+    color: #4A7FA7;
+    font-size: 80px;
+    text-align: center;
+}
+header .word2 {
+    color: #6b0a29;
+    font-size: 80px;
+    text-align: center;
+}
+
+
+.second {
+    background-image: url("IMG/Img 1.jpg");
+}
+
+
+@media screen and (max-width: 420px) {
+    .content-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    
+    .banner {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 220px;        
+        height: 100vh;       
+        padding: 12px;
+        margin: 0;
+        box-sizing: border-box;
+        overflow-y: auto;
+    }
+
+    
+    .content-grid {
+        margin-left: 240px; 
+        margin-top: 16px;    
+        padding: 16px;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+
+    
+    .banner nav {
+        display: block;
+        margin-top: 12px;
+    }
+
+    .nav-item {
+        display: block;
+        margin: 8px 0;
+        font-size: 18px;
+        white-space: normal;
+    }
+
+    
+    header .word1,
+    header .word2 {
+        display: block;
+        font-size: 28px;
+        text-align: left;
+    }
+
+
+    .content-item {
+        aspect-ratio: 1/1;
+        width: 100%;
+    }
+}
+
+header {
+    text-align: center;
+}
